@@ -13,11 +13,13 @@
 		9936D5C52BEB6FDF00342BC9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C42BEB6FDF00342BC9 /* Base */; };
 		9936D5C72BEB6FE200342BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C62BEB6FE200342BC9 /* Assets.xcassets */; };
 		9936D5CA2BEB6FE200342BC9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C92BEB6FE200342BC9 /* Base */; };
-		B70A9BFCF1D447EE52193D71 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F588A7371FFBDDC2AAB3DA5C /* Pods_QRDex.framework */; };
+		CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		629ABEC5A0CEB76A44950F44 /* Pods-QRDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRDex.debug.xcconfig"; path = "Target Support Files/Pods-QRDex/Pods-QRDex.debug.xcconfig"; sourceTree = "<group>"; };
+		0C5ABE70B49E19F2DBBFD953 /* Pods-QRDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRDex.debug.xcconfig"; path = "Target Support Files/Pods-QRDex/Pods-QRDex.debug.xcconfig"; sourceTree = "<group>"; };
+		13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BA3ADCA4264A5463ACF3E31 /* Pods-QRDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRDex.release.xcconfig"; path = "Target Support Files/Pods-QRDex/Pods-QRDex.release.xcconfig"; sourceTree = "<group>"; };
 		9936D5BA2BEB6FDF00342BC9 /* QRDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9936D5BD2BEB6FDF00342BC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9936D5BF2BEB6FDF00342BC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		9936D5C62BEB6FE200342BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9936D5C92BEB6FE200342BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9936D5CB2BEB6FE200342BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C89203BD04C48EECB1FAC29B /* Pods-QRDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRDex.release.xcconfig"; path = "Target Support Files/Pods-QRDex/Pods-QRDex.release.xcconfig"; sourceTree = "<group>"; };
-		F588A7371FFBDDC2AAB3DA5C /* Pods_QRDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QRDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +35,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70A9BFCF1D447EE52193D71 /* Pods_QRDex.framework in Frameworks */,
+				CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C498200CAC04E9BC6620B66 /* Frameworks */ = {
+		0F4F47E9F96141F186D204A8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F588A7371FFBDDC2AAB3DA5C /* Pods_QRDex.framework */,
+				13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -56,7 +56,7 @@
 				9936D5BC2BEB6FDF00342BC9 /* QRDex */,
 				9936D5BB2BEB6FDF00342BC9 /* Products */,
 				A6B2025909EEEAE56C88228E /* Pods */,
-				2C498200CAC04E9BC6620B66 /* Frameworks */,
+				0F4F47E9F96141F186D204A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,10 +85,9 @@
 		A6B2025909EEEAE56C88228E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				629ABEC5A0CEB76A44950F44 /* Pods-QRDex.debug.xcconfig */,
-				C89203BD04C48EECB1FAC29B /* Pods-QRDex.release.xcconfig */,
+				0C5ABE70B49E19F2DBBFD953 /* Pods-QRDex.debug.xcconfig */,
+				1BA3ADCA4264A5463ACF3E31 /* Pods-QRDex.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -99,11 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9936D5CE2BEB6FE200342BC9 /* Build configuration list for PBXNativeTarget "QRDex" */;
 			buildPhases = (
-				B25EC0578FDC1FB428ED24B4 /* [CP] Check Pods Manifest.lock */,
+				F1F421A222306B6D4CCE7A76 /* [CP] Check Pods Manifest.lock */,
 				9936D5B62BEB6FDF00342BC9 /* Sources */,
 				9936D5B72BEB6FDF00342BC9 /* Frameworks */,
 				9936D5B82BEB6FDF00342BC9 /* Resources */,
-				9E38CC89AC028AE8966C1AA7 /* [CP] Embed Pods Frameworks */,
+				34A23CA92776ADBCFB481D77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,7 +160,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9E38CC89AC028AE8966C1AA7 /* [CP] Embed Pods Frameworks */ = {
+		34A23CA92776ADBCFB481D77 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +177,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QRDex/Pods-QRDex-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B25EC0578FDC1FB428ED24B4 /* [CP] Check Pods Manifest.lock */ = {
+		F1F421A222306B6D4CCE7A76 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,13 +355,14 @@
 		};
 		9936D5CF2BEB6FE200342BC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 629ABEC5A0CEB76A44950F44 /* Pods-QRDex.debug.xcconfig */;
+			baseConfigurationReference = 0C5ABE70B49E19F2DBBFD953 /* Pods-QRDex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QK526Z4ZUL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -370,6 +370,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,13 +386,14 @@
 		};
 		9936D5D02BEB6FE200342BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C89203BD04C48EECB1FAC29B /* Pods-QRDex.release.xcconfig */;
+			baseConfigurationReference = 1BA3ADCA4264A5463ACF3E31 /* Pods-QRDex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QK526Z4ZUL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QRDex/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -399,6 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
