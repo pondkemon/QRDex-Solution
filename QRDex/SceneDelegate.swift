@@ -17,6 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // UnComment this code when want to use QrDex Storboard
+//        let storyboard = UIStoryboard(name: "QrDex", bundle: nil)
+//        let initialViewController = storyboard.instantiateInitialViewController()
+//        self.window?.rootViewController = initialViewController
+//        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

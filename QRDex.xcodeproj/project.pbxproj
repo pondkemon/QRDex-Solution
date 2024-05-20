@@ -13,6 +13,14 @@
 		9936D5C52BEB6FDF00342BC9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C42BEB6FDF00342BC9 /* Base */; };
 		9936D5C72BEB6FE200342BC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C62BEB6FE200342BC9 /* Assets.xcassets */; };
 		9936D5CA2BEB6FE200342BC9 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 9936D5C92BEB6FE200342BC9 /* Base */; };
+		995A6F1F2BFB05BE0054404D /* QrDexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F1E2BFB05BE0054404D /* QrDexViewController.swift */; };
+		995A6F212BFB05D40054404D /* QrDex.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995A6F202BFB05D40054404D /* QrDex.storyboard */; };
+		995A6F2A2BFB14FB0054404D /* QrDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F282BFB14FB0054404D /* QrDisplayViewController.swift */; };
+		995A6F2B2BFB14FB0054404D /* QrDisplay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995A6F292BFB14FB0054404D /* QrDisplay.storyboard */; };
+		995A6F2D2BFB154A0054404D /* InputQr.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995A6F2C2BFB154A0054404D /* InputQr.storyboard */; };
+		995A6F2F2BFB15540054404D /* InputQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F2E2BFB15540054404D /* InputQrViewController.swift */; };
+		995A6F312BFB164F0054404D /* ApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F302BFB164F0054404D /* ApiViewController.swift */; };
+		995A6F332BFB165D0054404D /* Api.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995A6F322BFB165D0054404D /* Api.storyboard */; };
 		CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +36,14 @@
 		9936D5C62BEB6FE200342BC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9936D5C92BEB6FE200342BC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9936D5CB2BEB6FE200342BC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		995A6F1E2BFB05BE0054404D /* QrDexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrDexViewController.swift; sourceTree = "<group>"; };
+		995A6F202BFB05D40054404D /* QrDex.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QrDex.storyboard; sourceTree = "<group>"; };
+		995A6F282BFB14FB0054404D /* QrDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrDisplayViewController.swift; sourceTree = "<group>"; };
+		995A6F292BFB14FB0054404D /* QrDisplay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QrDisplay.storyboard; sourceTree = "<group>"; };
+		995A6F2C2BFB154A0054404D /* InputQr.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputQr.storyboard; sourceTree = "<group>"; };
+		995A6F2E2BFB15540054404D /* InputQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQrViewController.swift; sourceTree = "<group>"; };
+		995A6F302BFB164F0054404D /* ApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewController.swift; sourceTree = "<group>"; };
+		995A6F322BFB165D0054404D /* Api.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Api.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +91,59 @@
 				9936D5BF2BEB6FDF00342BC9 /* SceneDelegate.swift */,
 				9936D5C12BEB6FDF00342BC9 /* ViewController.swift */,
 				9936D5C32BEB6FDF00342BC9 /* Main.storyboard */,
+				995A6F1D2BFB05A10054404D /* Scenes */,
 				9936D5C62BEB6FE200342BC9 /* Assets.xcassets */,
 				9936D5C82BEB6FE200342BC9 /* LaunchScreen.storyboard */,
 				9936D5CB2BEB6FE200342BC9 /* Info.plist */,
 			);
 			path = QRDex;
+			sourceTree = "<group>";
+		};
+		995A6F1D2BFB05A10054404D /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				995A6F222BFB14C50054404D /* Menu */,
+				995A6F272BFB14E60054404D /* Qr */,
+				995A6F342BFB16650054404D /* InputQr */,
+				995A6F362BFB167A0054404D /* Api */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		995A6F222BFB14C50054404D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				995A6F202BFB05D40054404D /* QrDex.storyboard */,
+				995A6F1E2BFB05BE0054404D /* QrDexViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		995A6F272BFB14E60054404D /* Qr */ = {
+			isa = PBXGroup;
+			children = (
+				995A6F292BFB14FB0054404D /* QrDisplay.storyboard */,
+				995A6F282BFB14FB0054404D /* QrDisplayViewController.swift */,
+			);
+			path = Qr;
+			sourceTree = "<group>";
+		};
+		995A6F342BFB16650054404D /* InputQr */ = {
+			isa = PBXGroup;
+			children = (
+				995A6F2C2BFB154A0054404D /* InputQr.storyboard */,
+				995A6F2E2BFB15540054404D /* InputQrViewController.swift */,
+			);
+			path = InputQr;
+			sourceTree = "<group>";
+		};
+		995A6F362BFB167A0054404D /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				995A6F322BFB165D0054404D /* Api.storyboard */,
+				995A6F302BFB164F0054404D /* ApiViewController.swift */,
+			);
+			path = Api;
 			sourceTree = "<group>";
 		};
 		A6B2025909EEEAE56C88228E /* Pods */ = {
@@ -153,7 +217,11 @@
 			files = (
 				9936D5C72BEB6FE200342BC9 /* Assets.xcassets in Resources */,
 				9936D5CA2BEB6FE200342BC9 /* Base in Resources */,
+				995A6F2D2BFB154A0054404D /* InputQr.storyboard in Resources */,
+				995A6F332BFB165D0054404D /* Api.storyboard in Resources */,
+				995A6F2B2BFB14FB0054404D /* QrDisplay.storyboard in Resources */,
 				9936D5C52BEB6FDF00342BC9 /* Base in Resources */,
+				995A6F212BFB05D40054404D /* QrDex.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995A6F2F2BFB15540054404D /* InputQrViewController.swift in Sources */,
 				9936D5C22BEB6FDF00342BC9 /* ViewController.swift in Sources */,
+				995A6F2A2BFB14FB0054404D /* QrDisplayViewController.swift in Sources */,
 				9936D5BE2BEB6FDF00342BC9 /* AppDelegate.swift in Sources */,
+				995A6F312BFB164F0054404D /* ApiViewController.swift in Sources */,
 				9936D5C02BEB6FDF00342BC9 /* SceneDelegate.swift in Sources */,
+				995A6F1F2BFB05BE0054404D /* QrDexViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
