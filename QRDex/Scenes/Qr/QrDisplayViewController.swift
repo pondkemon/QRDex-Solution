@@ -7,7 +7,7 @@
 
 import UIKit
 
-class QrDexViewController: UIViewController {
+class QrDisplayViewController: UIViewController {
     override func viewDidLoad() {
         
     }

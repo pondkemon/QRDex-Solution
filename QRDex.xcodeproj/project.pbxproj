@@ -21,8 +21,21 @@
 		995A6F2F2BFB15540054404D /* InputQrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F2E2BFB15540054404D /* InputQrViewController.swift */; };
 		995A6F312BFB164F0054404D /* ApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995A6F302BFB164F0054404D /* ApiViewController.swift */; };
 		995A6F332BFB165D0054404D /* Api.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 995A6F322BFB165D0054404D /* Api.storyboard */; };
+		995C2ED12BFC8591007967E6 /* QrGenaraterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C2ED02BFC8591007967E6 /* QrGenaraterService.swift */; };
+		995C2ED32BFC87B5007967E6 /* PokedexSercice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C2ED22BFC87B5007967E6 /* PokedexSercice.swift */; };
+		995C2EDB2BFC9D08007967E6 /* QRDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995C2EDA2BFC9D08007967E6 /* QRDexTests.swift */; };
 		CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		995C2EDC2BFC9D08007967E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9936D5B22BEB6FDF00342BC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9936D5B92BEB6FDF00342BC9;
+			remoteInfo = QRDex;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C5ABE70B49E19F2DBBFD953 /* Pods-QRDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QRDex.debug.xcconfig"; path = "Target Support Files/Pods-QRDex/Pods-QRDex.debug.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +57,10 @@
 		995A6F2E2BFB15540054404D /* InputQrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQrViewController.swift; sourceTree = "<group>"; };
 		995A6F302BFB164F0054404D /* ApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewController.swift; sourceTree = "<group>"; };
 		995A6F322BFB165D0054404D /* Api.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Api.storyboard; sourceTree = "<group>"; };
+		995C2ED02BFC8591007967E6 /* QrGenaraterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrGenaraterService.swift; sourceTree = "<group>"; };
+		995C2ED22BFC87B5007967E6 /* PokedexSercice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexSercice.swift; sourceTree = "<group>"; };
+		995C2ED82BFC9D07007967E6 /* QRDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		995C2EDA2BFC9D08007967E6 /* QRDexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRDexTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995C2ED52BFC9D07007967E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9936D5BC2BEB6FDF00342BC9 /* QRDex */,
+				995C2ED92BFC9D08007967E6 /* QRDexTests */,
 				9936D5BB2BEB6FDF00342BC9 /* Products */,
 				A6B2025909EEEAE56C88228E /* Pods */,
 				0F4F47E9F96141F186D204A8 /* Frameworks */,
@@ -80,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				9936D5BA2BEB6FDF00342BC9 /* QRDex.app */,
+				995C2ED82BFC9D07007967E6 /* QRDexTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +118,7 @@
 				9936D5C12BEB6FDF00342BC9 /* ViewController.swift */,
 				9936D5C32BEB6FDF00342BC9 /* Main.storyboard */,
 				995A6F1D2BFB05A10054404D /* Scenes */,
+				995C2ECF2BFC84F9007967E6 /* Service */,
 				9936D5C62BEB6FE200342BC9 /* Assets.xcassets */,
 				9936D5C82BEB6FE200342BC9 /* LaunchScreen.storyboard */,
 				9936D5CB2BEB6FE200342BC9 /* Info.plist */,
@@ -146,6 +173,23 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		995C2ECF2BFC84F9007967E6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				995C2ED02BFC8591007967E6 /* QrGenaraterService.swift */,
+				995C2ED22BFC87B5007967E6 /* PokedexSercice.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		995C2ED92BFC9D08007967E6 /* QRDexTests */ = {
+			isa = PBXGroup;
+			children = (
+				995C2EDA2BFC9D08007967E6 /* QRDexTests.swift */,
+			);
+			path = QRDexTests;
+			sourceTree = "<group>";
+		};
 		A6B2025909EEEAE56C88228E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +221,24 @@
 			productReference = 9936D5BA2BEB6FDF00342BC9 /* QRDex.app */;
 			productType = "com.apple.product-type.application";
 		};
+		995C2ED72BFC9D07007967E6 /* QRDexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 995C2EDE2BFC9D08007967E6 /* Build configuration list for PBXNativeTarget "QRDexTests" */;
+			buildPhases = (
+				995C2ED42BFC9D07007967E6 /* Sources */,
+				995C2ED52BFC9D07007967E6 /* Frameworks */,
+				995C2ED62BFC9D07007967E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				995C2EDD2BFC9D08007967E6 /* PBXTargetDependency */,
+			);
+			name = QRDexTests;
+			productName = QRDexTests;
+			productReference = 995C2ED82BFC9D07007967E6 /* QRDexTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +251,10 @@
 				TargetAttributes = {
 					9936D5B92BEB6FDF00342BC9 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					995C2ED72BFC9D07007967E6 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 9936D5B92BEB6FDF00342BC9;
 					};
 				};
 			};
@@ -206,6 +272,7 @@
 			projectRoot = "";
 			targets = (
 				9936D5B92BEB6FDF00342BC9 /* QRDex */,
+				995C2ED72BFC9D07007967E6 /* QRDexTests */,
 			);
 		};
 /* End PBXProject section */
@@ -222,6 +289,13 @@
 				995A6F2B2BFB14FB0054404D /* QrDisplay.storyboard in Resources */,
 				9936D5C52BEB6FDF00342BC9 /* Base in Resources */,
 				995A6F212BFB05D40054404D /* QrDex.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995C2ED62BFC9D07007967E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				995C2ED12BFC8591007967E6 /* QrGenaraterService.swift in Sources */,
 				995A6F2F2BFB15540054404D /* InputQrViewController.swift in Sources */,
 				9936D5C22BEB6FDF00342BC9 /* ViewController.swift in Sources */,
 				995A6F2A2BFB14FB0054404D /* QrDisplayViewController.swift in Sources */,
@@ -281,10 +356,27 @@
 				995A6F312BFB164F0054404D /* ApiViewController.swift in Sources */,
 				9936D5C02BEB6FDF00342BC9 /* SceneDelegate.swift in Sources */,
 				995A6F1F2BFB05BE0054404D /* QrDexViewController.swift in Sources */,
+				995C2ED32BFC87B5007967E6 /* PokedexSercice.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		995C2ED42BFC9D07007967E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				995C2EDB2BFC9D08007967E6 /* QRDexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		995C2EDD2BFC9D08007967E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9936D5B92BEB6FDF00342BC9 /* QRDex */;
+			targetProxy = 995C2EDC2BFC9D08007967E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9936D5C32BEB6FDF00342BC9 /* Main.storyboard */ = {
@@ -487,6 +579,42 @@
 			};
 			name = Release;
 		};
+		995C2EDF2BFC9D08007967E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK526Z4ZUL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m.QRDexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRDex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRDex";
+			};
+			name = Debug;
+		};
+		995C2EE02BFC9D08007967E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QK526Z4ZUL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.m.QRDexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QRDex.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/QRDex";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -504,6 +632,15 @@
 			buildConfigurations = (
 				9936D5CF2BEB6FE200342BC9 /* Debug */,
 				9936D5D02BEB6FE200342BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		995C2EDE2BFC9D08007967E6 /* Build configuration list for PBXNativeTarget "QRDexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C2EDF2BFC9D08007967E6 /* Debug */,
+				995C2EE02BFC9D08007967E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
