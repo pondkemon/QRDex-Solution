@@ -15,12 +15,15 @@ class PokemonListItemCell: UITableViewCell {
     @IBOutlet weak var bgView: UIView!
     
     func apply(pokemon: PokemonData) {
+        // ทำขอบโค้งกับทำเงา
         bgView.layer.cornerRadius = 8
         bgView.layer.masksToBounds = false
         bgView.layer.shadowColor = UIColor.gray.cgColor
         bgView.layer.shadowOffset = CGSize.zero
         bgView.layer.shadowOpacity = 0.1
         bgView.layer.shadowRadius = 4.0
+        
+        // set text & image
         title.text = "#\(pokemon.id) \(pokemon.name)"
         pkmImg.image = nil
         pkmImg.kf.indicatorType = .activity
