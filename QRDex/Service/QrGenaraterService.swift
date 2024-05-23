@@ -29,7 +29,7 @@ open class QrGenaraterService {
     public func getQRSting(tel: String) -> String {
         let base = "00020101021129370016A00000067701011101130066"+tel+"5802TH53037646304"
         let checkSum = crc16xmodem(data: base.data(using: .utf8)!, crc: 0xffff)
-        var checkSumHex = String(format:"%02X", checkSum)
+        let checkSumHex = String(format:"%02X", checkSum)
         return base+checkSumHex
     }
      
@@ -39,7 +39,7 @@ open class QrGenaraterService {
         let amountStrCount = String(format: "%02d", amountStr.count)
         base = base + amountStrCount + amountStr + "53037646304"
         let checkSum = crc16xmodem(data: base.data(using: .utf8)!, crc: 0xffff)
-        var checkSumHex = String(format:"%02X", checkSum)
+        let checkSumHex = String(format:"%02X", checkSum)
         return base+checkSumHex
     }
      
