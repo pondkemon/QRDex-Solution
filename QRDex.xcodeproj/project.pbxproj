@@ -26,6 +26,7 @@
 		CB636FF22BFEF26700041931 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB636FF02BFEF26700041931 /* PokemonData.swift */; };
 		CB636FF32BFEF26700041931 /* PokemonListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB636FF12BFEF26700041931 /* PokemonListData.swift */; };
 		CB636FF62BFEF2D500041931 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB636FF52BFEF2D500041931 /* APIClient.swift */; };
+		CBA9C8142BFF1D770042DD1F /* PokemonListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9C8132BFF1D770042DD1F /* PokemonListItemCell.swift */; };
 		CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +66,7 @@
 		CB636FF02BFEF26700041931 /* PokemonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonData.swift; sourceTree = "<group>"; };
 		CB636FF12BFEF26700041931 /* PokemonListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonListData.swift; sourceTree = "<group>"; };
 		CB636FF52BFEF2D500041931 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		CBA9C8132BFF1D770042DD1F /* PokemonListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				995A6F322BFB165D0054404D /* PokemonList.storyboard */,
 				995A6F302BFB164F0054404D /* PokemonListViewController.swift */,
+				CBA9C8132BFF1D770042DD1F /* PokemonListItemCell.swift */,
 			);
 			path = PokemonList;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				995A6F312BFB164F0054404D /* PokemonListViewController.swift in Sources */,
 				CB636FF32BFEF26700041931 /* PokemonListData.swift in Sources */,
 				9936D5C02BEB6FDF00342BC9 /* SceneDelegate.swift in Sources */,
+				CBA9C8142BFF1D770042DD1F /* PokemonListItemCell.swift in Sources */,
 				995A6F1F2BFB05BE0054404D /* MenuViewController.swift in Sources */,
 				CB636FF22BFEF26700041931 /* PokemonData.swift in Sources */,
 				CB636FF62BFEF2D500041931 /* APIClient.swift in Sources */,
@@ -556,8 +560,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -587,8 +591,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
