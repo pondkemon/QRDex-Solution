@@ -88,12 +88,7 @@ open class QrGenaraterService {
     }
      
     private func crc16xmodem(data: Data, crc: UInt16 = 0) -> UInt16 {
-      return _crc16(data: data, crc: crc, table: CRC16_XMODEM_TABLE)
+        return _crc16(data: data, crc: crc, table: CRC16_XMODEM_TABLE)
     }
-     
-//    let tel = "888888888"
-//    let qr = "00020101021129370016A00000067701011101130066"+tel+"5802TH53037646304"
-     
-    
     
 }
