@@ -23,11 +23,19 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func qrWasPressed(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard(name: "QrDisplay", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() else {
+            return
+        }
+        present(vc, animated: true)
     }
     
     @IBAction func inputWasPressed(_ sender: UIButton) {
-        
+        let storyboard = UIStoryboard(name: "InputQr", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
     @IBAction func restAPIWasPressed(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "PokemonList", bundle: nil)

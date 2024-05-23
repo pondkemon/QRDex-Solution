@@ -8,7 +8,12 @@
 import UIKit
 
 class InputQrViewController: UIViewController {
+    
     override func viewDidLoad() {
+        
+    }
+    
+    @IBAction func back(_ sender: UIButton) {
         
     }
 }
