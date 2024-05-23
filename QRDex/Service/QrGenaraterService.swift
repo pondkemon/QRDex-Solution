@@ -5,9 +5,7 @@
 //  Created by Wittawas Mukdaprasert on 21/5/2567 BE.
 //
 import Foundation
-import Alamofire
-import RxAlamofire
-import RxSwift
+import UIKit
 
 open class QrGenaraterService {
     public init() {}

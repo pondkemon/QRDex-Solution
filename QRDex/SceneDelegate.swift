@@ -19,10 +19,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         // UnComment this code when want to use QrDex Storboard
-//        let storyboard = UIStoryboard(name: "QrDex", bundle: nil)
-//        let initialViewController = storyboard.instantiateInitialViewController()
-//        self.window?.rootViewController = initialViewController
-//        self.window?.makeKeyAndVisible()
+        let storyboard = UIStoryboard(name: "QrDex", bundle: nil)
+        let initialViewController = storyboard.instantiateInitialViewController()
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
