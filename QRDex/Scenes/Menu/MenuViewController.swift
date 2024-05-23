@@ -8,7 +8,32 @@
 import UIKit
 
 class MenuViewController: UIViewController {
+    
+    @IBOutlet var views: [UIView]!
+    
     override func viewDidLoad() {
+        views.forEach({
+            $0.layer.cornerRadius = 8
+            $0.layer.masksToBounds = false
+            $0.layer.shadowColor = UIColor.gray.cgColor
+            $0.layer.shadowOffset = CGSize.zero
+            $0.layer.shadowOpacity = 0.1
+            $0.layer.shadowRadius = 4.0
+        })
+    }
+    
+    @IBAction func qrWasPressed(_ sender: UIButton) {
         
+    }
+    
+    @IBAction func inputWasPressed(_ sender: UIButton) {
+        
+    }
+    @IBAction func restAPIWasPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "PokemonList", bundle: nil)
+        guard let vc = storyboard.instantiateInitialViewController() else {
+            return
+        }
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
