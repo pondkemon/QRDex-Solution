@@ -9,6 +9,5 @@ import UIKit
 
 class ApiViewController: UIViewController {
     override func viewDidLoad() {
-        
     }
 }
