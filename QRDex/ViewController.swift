@@ -13,5 +13,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    func routeToMenu() {
+        let storyboard = UIStoryboard(name: "Menu", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Menu")
+    }
 }
 
