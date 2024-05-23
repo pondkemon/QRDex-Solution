@@ -27,7 +27,6 @@ class PokemonListViewController: UIViewController {
         } onError: { error in
             print(error)
         }
-
     }
 }
 
