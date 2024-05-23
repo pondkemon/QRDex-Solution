@@ -69,7 +69,7 @@ class QrDisplayViewController: UIViewController {
             qr = service.getQRSting(tel: tel, amount: amount)
         } else {
             detailStackView.isHidden = true
-            qr = service.getQRSting(tel: "858466739")
+            qr = service.getQRSting(tel: "857777777")
         }
         qrImgView.image = service.textToImage(text: qr)
         
