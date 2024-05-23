@@ -11,6 +11,7 @@ class QrDisplayViewController: UIViewController {
     
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var closeBtn: UIButton!
+    @IBOutlet weak var backToMenuBtn: UIButton!
     
     // QR View
     @IBOutlet weak var titleQRView: UIView!
@@ -27,6 +28,8 @@ class QrDisplayViewController: UIViewController {
     override func viewDidLoad() {
         backBtn.isHidden = navigationController == nil
         closeBtn.isHidden = navigationController != nil
+        backToMenuBtn.isHidden = navigationController == nil
+        backToMenuBtn.layer.cornerRadius = 8
         
         titleQRView.layer.cornerRadius = 8
         titleQRView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
@@ -43,6 +46,10 @@ class QrDisplayViewController: UIViewController {
     
     @IBAction func back(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func backToMenu(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
     }
     
     func generateQR() {
