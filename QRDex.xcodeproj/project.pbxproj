@@ -28,6 +28,8 @@
 		CB636FF62BFEF2D500041931 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB636FF52BFEF2D500041931 /* APIClient.swift */; };
 		CBA9C8142BFF1D770042DD1F /* PokemonListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA9C8132BFF1D770042DD1F /* PokemonListItemCell.swift */; };
 		CF534D79EB0515296215CFF6 /* Pods_QRDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B611C2676CF7B197BCAD0B /* Pods_QRDex.framework */; };
+		F1B175BB2C039BC600BA5AB7 /* InputQrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B175BA2C039BC600BA5AB7 /* InputQrModel.swift */; };
+		F1B175BD2C03A2F100BA5AB7 /* InputQRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B175BC2C03A2F100BA5AB7 /* InputQRTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		CB636FF12BFEF26700041931 /* PokemonListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonListData.swift; sourceTree = "<group>"; };
 		CB636FF52BFEF2D500041931 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CBA9C8132BFF1D770042DD1F /* PokemonListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListItemCell.swift; sourceTree = "<group>"; };
+		F1B175BA2C039BC600BA5AB7 /* InputQrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQrModel.swift; sourceTree = "<group>"; };
+		F1B175BC2C03A2F100BA5AB7 /* InputQRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputQRTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +172,7 @@
 			children = (
 				995A6F2C2BFB154A0054404D /* InputQr.storyboard */,
 				995A6F2E2BFB15540054404D /* InputQrViewController.swift */,
+				F1B175BA2C039BC600BA5AB7 /* InputQrModel.swift */,
 			);
 			path = InputQr;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				995C2EDA2BFC9D08007967E6 /* QRDexTests.swift */,
+				F1B175BC2C03A2F100BA5AB7 /* InputQRTests.swift */,
 			);
 			path = QRDexTests;
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				995A6F2A2BFB14FB0054404D /* QrDisplayViewController.swift in Sources */,
 				9936D5BE2BEB6FDF00342BC9 /* AppDelegate.swift in Sources */,
 				995A6F312BFB164F0054404D /* PokemonListViewController.swift in Sources */,
+				F1B175BB2C039BC600BA5AB7 /* InputQrModel.swift in Sources */,
 				CB636FF32BFEF26700041931 /* PokemonListData.swift in Sources */,
 				9936D5C02BEB6FDF00342BC9 /* SceneDelegate.swift in Sources */,
 				CBA9C8142BFF1D770042DD1F /* PokemonListItemCell.swift in Sources */,
@@ -393,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				995C2EDB2BFC9D08007967E6 /* QRDexTests.swift in Sources */,
+				F1B175BD2C03A2F100BA5AB7 /* InputQRTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

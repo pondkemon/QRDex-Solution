@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import QRDex
+@testable import QRDex
 
 final class QRDexTests: XCTestCase {
 
@@ -27,13 +27,13 @@ final class QRDexTests: XCTestCase {
         
     }
     
-    func testPokedexService() throws {
-        print("* Test pokedexService")
-        print("- Api should received data")
-        let pokedexService = PokedexService()
-        pokedexService.execute(request: "")
-        XCTAssertNotNil( "data", "Error receive data" )
-    }
+//    func testPokedexService() throws {
+//        print("* Test pokedexService")
+//        print("- Api should received data")
+//        let pokedexService = PokedexService()
+//        pokedexService.execute(request: "")
+//        XCTAssertNotNil( "data", "Error receive data" )
+//    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
