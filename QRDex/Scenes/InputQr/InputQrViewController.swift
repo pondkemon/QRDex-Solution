@@ -12,7 +12,9 @@ class InputQrViewController: UIViewController {
     @IBOutlet weak var telTextField: UITextField!
     @IBOutlet weak var amtTextField: UITextField!
     @IBOutlet weak var genQRBtn: UIButton!
-    
+    @IBOutlet weak var telErrorLabel: UILabel!
+    @IBOutlet weak var amtErrorLabel: UILabel!
+
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     private let mobilePhoneFormat: String = "###-###-####"
     private let replaceMobilePhoneFormat: Character = "#"
@@ -43,9 +45,15 @@ class InputQrViewController: UIViewController {
             return
         }
         
+        let telError = validTelFormat(tel: tel)
+        let amtError = validAmount(amt: amt)
         
-        guard let error = validTelFormat(tel: tel) else {
-            //handle error
+        if telError != nil || amtError != nil {
+            self.telErrorLabel.text = telError?.title
+            self.telErrorLabel.isHidden = telError == nil
+            
+            self.amtErrorLabel.text = amtError?.title
+            self.amtErrorLabel.isHidden = amtError == nil
             return
         }
         
@@ -86,7 +94,24 @@ class InputQrViewController: UIViewController {
         }
     }
     
-    func validTelFormat(tel telString: String) -> InputQrError? {
+    func validAmount(amt amountString: String) -> InputAmtQrError? {
+        let countOfDecimal = amountString.filter { $0 == "." }.count
+        guard countOfDecimal <= 1 else {
+            return .IncorrectFormat
+        }
+        
+        guard let decimalNumber = Decimal(string: amountString) else {
+            return .IncorrectFormat
+        }
+        
+        guard decimalNumber.significantFractionalDecimalDigits <= 2 else {
+            return .FloatMore2Digit
+        }
+        
+        return nil
+    }
+    
+    func validTelFormat(tel telString: String) -> InputTelQrError? {
         let clearTelText = telString.components(separatedBy: CharacterSet.decimalDigits.inverted).joined()
         
         guard clearTelText.first == "0" else {
@@ -144,7 +169,8 @@ extension InputQrViewController {
     }
     
     @objc func amtTextFieldDidChange(_ textField: UITextField) {
-        
+        let newAmount = textField.text?.applyAmountFormat()
+        amtTextField.text = newAmount
     }
 }
 
@@ -160,5 +186,23 @@ extension String {
             pureNumber.insert(patternCharacter, at: stringIndex)
         }
         return pureNumber
+    }
+    
+    func applyAmountFormat() -> String {
+        let amountText: String = self
+        
+        // "." more than 1 charactor
+        let countOfDot = amountText.filter { $0 == "." }.count
+        if amountText.last == "." && countOfDot > 1 {
+            return String(amountText.dropLast())
+        }
+        
+        return amountText
+    }
+}
+
+extension Decimal {
+    var significantFractionalDecimalDigits: Int {
+        return max(-exponent, 0)
     }
 }

@@ -54,4 +54,11 @@ final class InputQRTests: XCTestCase {
     func testLast4Digit_validWhenGenQR_displayErrorNotOrderingLast4Digit() throws {
         // Test
     }
+    
+    func testFloatMore2Dot_typingAmount_changeFloat1Dot() throws {
+        let floatMore2Dot: String = "112.4."
+        let newAmountFormat = floatMore2Dot.applyAmountFormat()
+        let expectNewFloatMore2Dot: String = "112.4"
+        XCTAssertEqual(expectNewFloatMore2Dot, newAmountFormat)
+    }
 }
