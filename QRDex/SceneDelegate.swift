@@ -20,8 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         // UnComment this code when want to use QrDex Storboard
         let storyboard = UIStoryboard(name: "Menu", bundle: nil)
-        let initialViewController = storyboard.instantiateInitialViewController()
-        self.window?.rootViewController = initialViewController
+        guard let initialViewController = storyboard.instantiateInitialViewController() else {
+            return
+        }
+        let navigation = UINavigationController(rootViewController: initialViewController)
+        navigation.setNavigationBarHidden(true, animated: true)
+        self.window?.rootViewController = navigation
         self.window?.makeKeyAndVisible()
     }
 
